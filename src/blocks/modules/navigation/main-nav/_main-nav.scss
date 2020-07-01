@@ -1,0 +1,32 @@
+.main-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__item {
+    border-radius: 4px;
+    transition: .3s;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &:hover {
+      background-color: #e5f1f8;
+
+      & .main-nav__link {
+        color: $main-blue;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $main-dark;
+    transition: .3s;
+    padding: 8px 15px;
+    font-size: 18px;
+  }
+}

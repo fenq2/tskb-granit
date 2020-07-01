@@ -4,7 +4,7 @@ const { dest, src, watch, series, parallel, task } = require('gulp'),
 
 module.exports = task('images', () => {
 	return src(['src/images/**/*.{png,jpg,gif,svg}',
-		'!./dev//images/svg/*'])
+		'!./src//images/svg/*'])
 		.pipe(dest('./build/images/'))
 });
 

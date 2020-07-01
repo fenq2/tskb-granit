@@ -4,8 +4,9 @@ block variables
 	- const title = "Главная страница"
 
 block content
-	span 123	
+	include ../blocks/modules/header/header
 
+	include ../blocks/modules/footer/footer
 block scripts
 	script(src="js/main.min.js")
-	script(src="js/vendor/libs.js")
+	script(src="js/vendor/libs.min.js")
