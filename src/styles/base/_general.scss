@@ -1,5 +1,5 @@
 html {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", sans-serif;
   font-size: $base-font-size;
   height: 100%;
 }
@@ -9,6 +9,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  color: $main-dark;
 }
 
 *,

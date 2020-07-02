@@ -1,0 +1,24 @@
+.btn {
+  display: block;
+  padding: 10px;
+  font-family: "Lato-Medium";
+  background-color: $main-yellow;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.15);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+
+  @media screen and(max-width: 480px) {
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: #ff7e00;
+    box-shadow: none;
+  }
+}

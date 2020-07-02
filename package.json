@@ -17,6 +17,7 @@
   "author": "fenq2",
   "license": "ISC",
   "dependencies": {
+    "inputmask": "^5.0.3",
     "jquery": "^3.5.1"
   },
   "devDependencies": {

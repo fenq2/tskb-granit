@@ -1,7 +1,17 @@
 .main-nav {
+
+  @media screen and(max-width: 1140px) {
+    padding-top: 15px;
+  }
+
+  @media screen and(max-width: 768px) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   &__item {
@@ -10,6 +20,10 @@
 
     &:not(:last-child) {
       margin-right: 25px;
+
+      @media screen and(max-width: 960px) {
+        margin-right: 15px;
+      }
     }
 
     &:hover {
@@ -28,5 +42,9 @@
     transition: .3s;
     padding: 8px 15px;
     font-size: 18px;
+
+    @media screen and(max-width: 960px) {
+      font-size: 16px;
+    }
   }
 }

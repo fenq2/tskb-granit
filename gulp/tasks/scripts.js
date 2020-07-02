@@ -58,13 +58,15 @@ module.exports = task('_scripts', () => {
 });
 
 module.exports = task('libs', () => {
-	return src(['node_modules/jquery/dist/jquery.min.js'])
+	return src(['node_modules/jquery/dist/jquery.min.js',
+		'node_modules/inputmask/dist/jquery.inputmask.min.js'])
 		.pipe(concat('libs.min.js'))
 		.pipe(dest('./build/js/vendor'));
 });
 
 module.exports = task('_libs', () => {
-	return src(['node_modules/jquery/dist/jquery.min.js'])
+	return src(['node_modules/jquery/dist/jquery.min.js',
+		'node_modules/inputmask/dist/jquery.inputmask.min.js'])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
 		.pipe(dest('./build/js/vendor'));

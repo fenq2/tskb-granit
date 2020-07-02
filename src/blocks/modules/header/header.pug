@@ -9,9 +9,12 @@ header.header
                     +icon('timetable', 'header-block__icon')
                     p.header-block__text Ежедневно с 09:00 до 18:00
             .top-header__right
-                a(href="tel:+7 (495) 596-96-11").top-header__phone +7 (495) 596-96-11
+                a(href="tel:+74955969611").top-header__phone +7 (495) 596-96-11
                 a(href="#").callback-link Заказать звонок
     .header__main.main-header
         .container
+            include ../../modules/navigation/sandwich/sandwich
             include ../../components/logo/logo
             include ../../modules/navigation/main-nav/main-nav
+            a(href="#").phone-mobile
+                +icon('phone', 'phone-mobile__icon')

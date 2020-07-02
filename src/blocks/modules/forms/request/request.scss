@@ -1,0 +1,100 @@
+.request-form {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: -204px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, .2);
+  padding: 20px;
+
+  @media screen and(max-width: 960px) {
+    position: static;
+    flex: 1;
+  }
+
+  @media screen and(max-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media screen and(max-width: 540px) {
+    width: 100%;
+  }
+
+  @media screen and(max-width: 480px) {
+    padding: 15px;
+  }
+  
+  &__wrap {
+    background-color: #ffffff;
+    padding: 23px;
+    -webkit-box-shadow: 0px 0px 30px 15px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 30px 15px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 30px 15px rgba(0,0,0,0.15);
+
+    @media screen and(max-width: 480px) {
+      padding: 20px 10px;
+    }
+  }
+
+  &__title {
+    font-family: "BebasNeue-Bold";
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+
+    @media screen and(max-width: 960px) {
+      font-size: 24px;
+    }
+
+    @media screen and(max-width: 480px) {
+      font-size: 18px;
+    }
+  }
+
+  &__field {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #ecedee;
+    padding: 12px 20px;
+    outline: none;
+
+    @media screen and(max-width: 480px) {
+      padding: 8px 15px;
+      margin-top: 15px;
+    }
+
+    &::placeholder {
+      font-family: "Lato-Light";
+      color: $main-dark;
+
+      @media screen and(max-width: 480px) {
+        font-size: 14px;
+      }
+    }
+
+    &:focus {
+      border: 1px solid $main-yellow;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 20px;
+
+    @media screen and(max-width: 480px) {
+      margin-top: 15px;
+    }
+  }
+
+  &__policy {
+    font-family: "Lato-Light";
+    font-size: 12px;
+    color: #9fa5a6;
+    padding: 20px 0;
+    line-height: 1.3;
+
+    @media screen and(max-width: 480px) {
+      padding: 10px 0;
+    }
+  }
+}

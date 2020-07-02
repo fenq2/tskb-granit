@@ -1,0 +1,32 @@
+.sandwich
+    a(href="#").sandwich__open-btn
+        span.sandwich__line
+        span.sandwich__line
+        span.sandwich__line
+    .sandwich__content
+        .sandwich__header
+            a(href="#").sandwich__close-btn
+                +icon('close', 'sandwich__close-icon')
+        nav.sandwich-nav
+            ul.sandwich-nav__list
+                li.sandwich-nav__item
+                    a(href="#").sandwich-nav__link Главная
+                li.sandwich-nav__item
+                    a(href="#").sandwich-nav__link Услуги
+                li.sandwich-nav__item
+                    a(href="#").sandwich-nav__link Лицензия
+                li.sandwich-nav__item
+                    a(href="#").sandwich-nav__link О нас
+                li.sandwich-nav__item
+                    a(href="#").sandwich-nav__link Задать вопрос
+                li.sandwich-nav__item
+                    a(href="#").sandwich-nav__link Контакты
+        .sandwich-block
+            span.sandwich-block__title Информация
+            .sandwich-block__content
+                .header-block
+                    +icon('location', 'header-block__icon')
+                    p.header-block__text г.Одинцово, ул.Западная, д.13
+                .header-block
+                    +icon('timetable', 'header-block__icon')
+                    p.header-block__text Ежедневно с 09:00 до 18:00

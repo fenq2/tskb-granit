@@ -3,9 +3,19 @@
   align-items: center;
   text-decoration: none;
 
+  @media screen and(max-width: 640px) {
+    flex-direction: column;
+  }
+
   &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 75px;
     height: 50px;
+    @media screen and(max-width: 640px) {
+      width: 60px;
+    }
   }
 
   &__picture {
@@ -14,6 +24,10 @@
 
   &__info {
     padding-left: 10px;
+
+    @media screen and(max-width: 640px) {
+      padding-left: 0;
+    }
   }
 
   &__title {
@@ -23,6 +37,14 @@
     color: $main-blue;
     font-size: 40px;
     text-transform: uppercase;
+
+    @media screen and(max-width: 960px) {
+      font-size: 32px;
+    }
+
+    @media screen and(max-width: 640px) {
+      display: none;
+    }
   }
 
   &__desc {
@@ -32,5 +54,9 @@
     color: #858585;
     text-transform: none;
     line-height: 1;
+
+    @media screen and(max-width: 640px) {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,134 @@
+.info {
+  &__text {
+    font-family: "Lato-Light";
+    padding: 30px 0;
+    color: $main-dark;
+
+    &_width {
+      display: block;
+      padding-bottom: 20px;
+      max-width: 61%;
+      line-height: 1.3;
+
+      @media screen and(max-width: 960px) {
+        max-width: 100%;
+      }
+    }
+
+    &-link {
+      color: $main-blue;
+      text-decoration: none;
+      border-bottom: 1px solid $main-blue;
+      transition: .3s;
+
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+
+  &__registration {
+    font-family: "Lato-Bold";
+    padding-bottom: 25px;
+
+    &-link {
+      color: $main-blue;
+      text-decoration: none;
+      border-bottom: 1px solid $main-blue;
+      transition: .3s;
+
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-block {
+    font-family: "Lato-Light";
+    min-height: 395px;
+    width: 49%;
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    padding: 30px;
+
+    @media screen and(max-width: 768px) {
+      width: 100%;
+    }
+
+    @media screen and(max-width: 480px) {
+      padding: 20px 15px;
+    }
+
+    &__title {
+      position: relative;
+      font-family: "BebasNeue-Bold";
+      font-size: 30px;
+      text-transform: uppercase;
+      padding-top: 20px;
+      line-height: 1;
+
+      @media screen and(max-width: 960px) {
+        font-size: 24px;
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        background-color: $main-blue;
+        width: 55px;
+        height: 3px;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &__item {
+      padding: 20px 0 20px 45px;
+      background-image: url(../images/content/check.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      min-height: 22px;
+
+      @media screen and(max-width: 480px) {
+        padding: 15px 0 15px 40px;
+        font-size: 14px;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #f2f2f2;
+      }
+
+      &_width {
+        display: block;
+        max-width: 440px;
+      }
+    }
+
+    &__desc {
+      line-height: 1.25;
+      padding-top: 20px;
+
+      @media screen and(max-width: 480px) {
+        font-size: 14px;
+      }
+
+      &_ln {
+        display: block;
+        padding-top: 15px;
+      }
+
+      &_fw {
+        font-family: "Lato-Heavy";
+      }
+    }
+  }
+}
