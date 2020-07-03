@@ -1,0 +1,113 @@
+.protocols {
+  padding-top: 245px;
+  padding-bottom: 45px;
+  background-color: #fafafa;
+  margin-top: -200px;
+
+  &__title {
+    padding-bottom: 20px;
+  }
+
+  &__content {
+    display: flex;
+
+    @media screen and(max-width: 960px) {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    max-width: 730px;
+
+    @media screen and(max-width: 960px) {
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    font-family: "Lato-Light";
+
+    &_padb {
+      padding-bottom: 20px;
+    }
+  }
+
+  &-list {
+    &__side {
+      display: flex;
+      justify-content: space-between;
+      max-width: 555px;
+
+      @media screen and(max-width: 768px) {
+        max-width: 100%;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__more-btn {
+    max-width: max-content;
+    padding: 12px 28px;
+    font-size: 18px;
+    margin-top: 12px;
+    text-align: center;
+
+    @media screen and(max-width: 540px) {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  }
+
+  &__date {
+    font-family: "Lato-Bold";
+    font-size: 18px;
+    padding: 25px 0 30px 0;
+  }
+
+  &-slider {
+    flex: 1;
+    margin-left: auto;
+    max-width: 355px;
+
+    @media screen and(max-width: 960px) {
+      margin-right: auto;
+      margin-top: 15px;
+    }
+
+    @media screen and(max-width: 420px) {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-family: "Lato-Bold";
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    &__container {
+      -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+      height: 505px;
+
+      @media screen and(max-width: 420px) {
+        height: auto;
+      }
+    }
+    
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+
+      @media screen and(max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+}

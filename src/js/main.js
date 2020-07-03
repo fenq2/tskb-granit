@@ -15,6 +15,16 @@ let maskedInput = function () {
     });
 };
 
+$(".lazyload").lazyload();
+
+let sliderProtocols = new Swiper('.protocols-slider__container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+$('.calculator-form__textarea').attr('placeholder', 'Параметры объекта:' + '\n' + 'Кол-во линий' + '\n' + 'Кол-во замеров' + '\n' + 'Кол-во энергоустановок' + '\n' + 'Кол-во ВРУ шкафов' + '\n' + 'Кол-во электрораспределительных шкафов');
 
 sandwich();
 maskedInput();

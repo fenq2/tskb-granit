@@ -1,0 +1,43 @@
+.protocols
+    .container
+        h2.section-title.protocols__title Наша лаборатория может составить 42 различных протокола испытаний
+        .protocols__content
+            .protocols__info
+                p.protocols__text.protocols__text_padb Качественно проведенные лабораторные испытания не только позволят выявить проблемы в электропроводке и своевременно устранить их, но и подгот
+                .main-list.protocols-list
+                    p.main-list__title Основные испытания:
+                    .protocols-list__side
+                        ul.main-list__wrap
+                            li.main-list__item Металлосвязь
+                            li.main-list__item Петля фаза - ноль
+                            li.main-list__item Сопротивление изоляции проводника
+                        ul.main-list__wrap
+                            li.main-list__item Проверка автоматики
+                            li.main-list__item Контур заземления
+                a(href="#").btn.protocols__more-btn Ознакомиться со всеми возможными испытаниями
+                p.protocols__date Сроки изготовления протокола - 3 рабочих дня
+                .main-list.protocols-list
+                    p.main-list__title Типовой протокол электролаборатории состоит из:
+                    ul.main-list__wrap
+                        li.main-list__item <span class="main-list__item_fw">Титульного листа</span>, с логотипом и реквизитами контрольно электроизмерительной лаборатории, указанием наименования организации, полного адреса заказчика и датой выполнения измерений
+                        li.main-list__item <span class="main-list__item_fw">Пояснительной записки</span>, подробно описывающей способ и ход измерений
+                        li.main-list__item <span class="main-list__item_fw">Первый протокол</span> - это визуальный осмотр электроустановки на предмет ее соответствия ПУЭ, СНиПам и нормам электромонтажных работ
+                        li.main-list__item <span class="main-list__item_fw">Второй протокол</span> - это наличие металлосвязи - непрерывной цепи между требующим заземления оборудованием и контуром заземления здания
+                        li.main-list__item <span class="main-list__item_fw">Третий протокол</span> - результат тестирования сопротивления изоляции испытываемых проводов и кабелей с помощью мегаомметра
+                        li.main-list__item <span class="main-list__item_fw">Четвертый протокол</span> отражает результаты измерения петли фаза-ноль, или тока короткого замыкания, необходимого для аварийного срабатывания электромагнитного или теплового расщепителя автомата или перегорания плавкой вставки
+                        li.main-list__item <span class="main-list__item_fw">Пятый протокол</span> отражает состояние и параметры контура заземления, если он у вас, разумеется, имеется в наличии
+                        li.main-list__item <span class="main-list__item_fw">Копия свидетельства</span> о регистрации лаборатории, допущенной в эксплуатацию
+            .protocols-slider
+                p.protocols-slider__title Примеры протоколов
+                .swiper-container.protocols-slider__container
+                    .swiper-wrapper.protocols-slider__wrapper
+                        .swiper-slide.protocols-slider__item
+                            img(data-src="images/content/protocols-item.jpg").lazyload.protocols-slider__img
+                        .swiper-slide.protocols-slider__item
+                            img(data-src="images/content/protocols-item.jpg").lazyload.protocols-slider__img
+                        .swiper-slide.protocols-slider__item
+                            img(data-src="images/content/protocols-item.jpg").lazyload.protocols-slider__img
+                    .swiper-button-next
+                        +icon('arrow')
+                    .swiper-button-prev
+                        +icon('arrow')

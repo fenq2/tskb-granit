@@ -46,8 +46,6 @@
   }
 
   &__title {
-    font-family: "BebasNeue-Bold";
-    font-size: 60px;
     text-transform: uppercase;
     color: #ffffff;
     line-height: 1.2;
@@ -70,8 +68,11 @@
   }
 
   &-list {
+    padding-left: 0;
+
     &__item {
       font-family: "Lato-Medium";
+      margin-bottom: 0;
       color: #ffffff;
       font-size: 18px;
       background-image: url(../images/content/lightning.png);
@@ -81,6 +82,10 @@
 
       @media screen and(max-width: 960px) {
         font-size: 16px;
+      }
+
+      &:before {
+        display: none;
       }
 
       &_color {
