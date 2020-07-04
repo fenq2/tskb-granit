@@ -119,7 +119,7 @@
                   <h4 class="request-form__title">Закажите бесплатный выезд на объект</h4>
                   <form class="request-form__block" action="#">
                     <input class="request-form__field" type="text" placeholder="Ваше имя:">
-                    <input class="request-form__field" type="tel" placeholder="Ваш телефон:">
+                    <input class="request-form__field mask-phone" type="tel" placeholder="Ваш телефон:">
                     <button class="btn request-form__btn">Оставить заявку</button>
                     <p class="request-form__policy">Отправляя форму, вы даете согласие на обработку ваших персональных данных и принимаете нашу политику конфиденциальности. Ваши данные будут в безопасности.</p>
                   </form>
@@ -192,13 +192,15 @@
                     <div class="swiper-slide protocols-slider__item"><img class="lazyload protocols-slider__img" data-src="images/content/protocols-item.jpg"></div>
                     <div class="swiper-slide protocols-slider__item"><img class="lazyload protocols-slider__img" data-src="images/content/protocols-item.jpg"></div>
                   </div>
-                  <div class="swiper-button-next">
-                    <svg class="svg-icon icon-arrow ">
+                </div>
+                <div class="protocols-navigation">
+                  <div class="swiper-button-next protocols-navigation__next">
+                    <svg class="svg-icon icon-arrow swiper-button-icon">
                       <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow"></use>
                     </svg>
                   </div>
-                  <div class="swiper-button-prev">
-                    <svg class="svg-icon icon-arrow ">
+                  <div class="swiper-button-prev protocols-navigation__prev">
+                    <svg class="svg-icon icon-arrow swiper-button-icon">
                       <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow"></use>
                     </svg>
                   </div>
@@ -293,6 +295,163 @@
             </div>
           </div>
         </div>
+        <div class="timeline">
+          <div class="container">
+            <h2 class="section-title timeline__title">Как мы работаем</h2>
+            <div class="timeline__wrap">
+              <div class="timeline__line timeline__top-line">
+                <div class="timeline-item">
+                  <div class="timeline-circle"><img class="lazyload timeline-circle__img" data-src="images/content/timeline-icon1.png"></div>
+                  <div class="timeline-item__text">Вы оформляете заказ на сайте или по телефону</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-circle"><img class="lazyload timeline-circle__img" data-src="images/content/timeline-icon2.png"></div>
+                  <div class="timeline-item__text">Рассчитываем стоимость. Заключаем <a href="#" class="timeline-item__link">договор</a></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-circle"><img class="lazyload timeline-circle__img" data-src="images/content/timeline-icon3.png"></div>
+                  <div class="timeline-item__text">Проводим испытания</div>
+                </div>
+              </div>
+              <div class="timeline__line timeline__bottom-line">
+                <div class="timeline-item">
+                  <div class="timeline-circle"><img class="lazyload timeline-circle__img" data-src="images/content/timeline-icon4.png"></div>
+                  <div class="timeline-item__text">Выдаем <a href="#" class="timeline-item__link">протололы</a></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-circle"><img class="lazyload timeline-circle__img" data-src="images/content/timeline-icon5.png"></div>
+                  <div class="timeline-item__text">Закрываем договор</div>
+                </div>
+                <div class="timeline-item timeline-item-finish">
+                  <div class="timeline-circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews">
+          <div class="container">
+            <div class="title-arrow">
+              <h2 class="section-title reviews__title">Отзывы о нашей работе</h2>
+              <div class="swiper-navigation reviews-navigation">
+                <div class="swiper-button-next reviews-navigation__next">
+                  <svg class="svg-icon icon-arrow swiper-button-icon">
+                    <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-prev reviews-navigation__prev">
+                  <svg class="svg-icon icon-arrow swiper-button-icon">
+                    <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-slider">
+              <div class="swiper-container reviews-slider__container">
+                <div class="swiper-wrapper reviews-slider__wrapper">
+                  <div class="swiper-slide reviews-item">
+                    <div class="reviews-item__wrap"><img class="lazyload reviews-item__img" data-src="images/content/reviews-item1.png"></div>
+                  </div>
+                  <div class="swiper-slide reviews-item">
+                    <div class="reviews-item__wrap"><img class="lazyload reviews-item__img" data-src="images/content/reviews-item2.png"></div>
+                  </div>
+                  <div class="swiper-slide reviews-item">
+                    <div class="reviews-item__wrap"><img class="lazyload reviews-item__img" data-src="images/content/reviews-item3.png"></div>
+                  </div>
+                  <div class="swiper-slide reviews-item">
+                    <div class="reviews-item__wrap"><img class="lazyload reviews-item__img" data-src="images/content/reviews-item4.png"></div>
+                  </div>
+                  <div class="swiper-slide reviews-item">
+                    <div class="reviews-item__wrap"><img class="lazyload reviews-item__img" data-src="images/content/reviews-item1.png"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="laboratory">
+          <div class="container">
+            <div class="title-arrow">
+              <h2 class="section-title laboratory__title">Наша лаборатория</h2>
+              <div class="swiper-navigation laboratory-navigation">
+                <div class="swiper-button-next laboratory-navigation__next">
+                  <svg class="svg-icon icon-arrow swiper-button-icon">
+                    <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-prev laboratory-navigation__prev">
+                  <svg class="svg-icon icon-arrow swiper-button-icon">
+                    <use xlink:href="images/svg/sprite/symbol/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="laboratory-slider">
+              <div class="swiper-container laboratory-slider__container">
+                <div class="swiper-wrapper laboratory-slider__wrapper">
+                  <div class="swiper-slide laboratory-item">
+                    <div class="laboratory-item__img"><img class="lazyload laboratory-item__picture" data-src="images/content/laboratory.jpg"></div>
+                  </div>
+                  <div class="swiper-slide laboratory-item">
+                    <div class="laboratory-item__img"><img class="lazyload laboratory-item__picture" data-src="images/content/laboratory.jpg"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="laboratory-slider__text">Электроизмерительная электролаборатория предназначена для проведения электроизмерений с целью определения состояния электрических сетей, оборудования, приборов. В нашем штате работают высококвалифицированные сотрудники имеющие достаточный опыт работы и допуск к проведению данного вида работ. Все работы мы выполняем на высоком уровне, относимся к исполнению своих обязанностей ответственно и профессионально. Любой заказ мы выполняем тщательно, аккуратно и быстро.</p>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="container">
+            <h2 class="section-title services__title">Другие наши услуги</h2>
+            <div class="services__content"><a class="services-item" href="#">
+                <div class="services-item__img"><img class="lazyload services-item__picture" data-src="images/content/services-item1.jpg"></div><span class="services-item__title">Энергоаудит</span></a><a class="services-item" href="#">
+                <div class="services-item__img"><img class="lazyload services-item__picture" data-src="images/content/services-item2.jpg"></div><span class="services-item__title">Разработка программ энергосбережения</span></a><a class="services-item" href="#">
+                <div class="services-item__img"><img class="lazyload services-item__picture" data-src="images/content/services-item3.jpg"></div><span class="services-item__title">Тепловизионное обследование</span></a><a class="services-item" href="#">
+                <div class="services-item__img"><img class="lazyload services-item__picture" data-src="images/content/services-item4.jpg"></div><span class="services-item__title">Устройства молниезащиты и заземления</span></a><a class="services-item" href="#">
+                <div class="services-item__img"><img class="lazyload services-item__picture" data-src="images/content/services-item5.jpg"></div><span class="services-item__title">Монтажные работы</span></a></div>
+          </div>
+        </div>
+        <div class="calculator callback lazyload" data-src="images/content/callback-bg.jpg">
+          <div class="calculator__wrap callback__wrap">
+            <div class="container">
+              <h2 class="section-title calculator__title">Остались вопросы?</h2>
+              <p class="calculator__desc callback__desc">Звоните нам по телефону <a href="#" class="callback__phone-link">+7 (495) 589-96-11</a> или оставьте заявку для обратного звонка.</p>
+              <p class="calculator__desc callback__desc">Оставьте ваш номер и мы перезвоним Вам!</p>
+              <form class="calculator-form">
+                <div class="calculator-form__group">
+                  <input class="calculator-form__field" type="text" placeholder="Ваше имя:">
+                  <input class="calculator-form__field mask-phone" type="text" placeholder="Ваш телефон:">
+                </div>
+                <button class="btn calculator-form__btn">Оставить заявку</button>
+                <p class="calculator-form__policy">Отправляя форму, вы даете согласие на обработку ваших персональных данных и принимаете нашу политику конфиденциальности. Ваши данные будут в безопасности.</p>
+              </form><img class="lazyload calculator__man" data-src="images/content/callback-wooman.png">
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <div class="container">
+            <h2 class="section-title map__title">Или приезжайте к нам в офис</h2>
+            <div class="map__wrap">
+              <div class="loader loader-default"></div>
+              <div id="map-yandex"></div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__top">
+            <div class="container"><a class="footer-logo" href="#"><img src="images/content/footer-logo.png" alt="Логотип">
+                <div class="footer-logo__info"><span class="footer-logo__title">ООО "ТСКБ"-Гранит</span><span class="footer-logo__desc">Технологическая системная компания</span></div></a>
+              <div class="footer__side"><span class="footer__text">г.Одинцово, ул.Западная, д.13</span><span class="footer__text">Ежедневно с 09:00 до 18:00</span></div>
+              <div class="footer__side"><a class="footer__phone" href="tel:+74955969611">+7 (495) 596-96-11</a><a class="footer__email" href="mailto:tskbgranit@yandex.ru">tskbgranit@yandex.ru</a></div><a class="callback-link" href="#">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="container">
+              <div class="footer-copy"><span class="footer-copy__text">© 2021 ООО "ТСКБ"-Гранит</span><span class="footer-copy__line">|</span><a class="footer-copy__policy" href="#">Политика обработки и защиты персональных данных</a></div><span class="footer-developer">Сайт разработан с <a href="#" class="footer-developer__link">ВебКенгуру</a></span>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
     <script src="js/vendor/libs.min.js"></script>

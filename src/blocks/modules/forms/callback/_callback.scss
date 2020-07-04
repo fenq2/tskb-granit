@@ -1,0 +1,27 @@
+.callback {
+  background-position: 100% 73%;
+
+  & .container {
+    min-height: 470px;
+  }
+
+  &__desc {
+    padding-bottom: 12px;
+  }
+
+  &__phone-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s;
+    white-space: nowrap;
+
+    @media screen and(max-width: 540px) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: $main-blue;
+    }
+  }
+}

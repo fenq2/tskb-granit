@@ -58,9 +58,18 @@
   }
 
   &-nav {
+    &__list {
+      padding-left: 0;
+    }
+
     &__item {
+      padding-left: 0;
       &:not(:last-child) {
         border-bottom: 1px solid #e7e7e7;
+      }
+
+      &:before {
+        display: none;
       }
     }
 

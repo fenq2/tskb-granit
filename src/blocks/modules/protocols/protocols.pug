@@ -37,7 +37,8 @@
                             img(data-src="images/content/protocols-item.jpg").lazyload.protocols-slider__img
                         .swiper-slide.protocols-slider__item
                             img(data-src="images/content/protocols-item.jpg").lazyload.protocols-slider__img
-                    .swiper-button-next
-                        +icon('arrow')
-                    .swiper-button-prev
-                        +icon('arrow')
+                .protocols-navigation
+                    .swiper-button-next.protocols-navigation__next
+                        +icon('arrow', 'swiper-button-icon')
+                    .swiper-button-prev.protocols-navigation__prev
+                        +icon('arrow', 'swiper-button-icon')

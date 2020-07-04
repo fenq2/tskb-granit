@@ -276,3 +276,42 @@ textarea {
     top: 0;
   }
 }
+
+.title-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  outline: none;
+}
+
+.swiper-button-prev {
+  transform: rotate(-180deg);
+}
+
+.swiper-button-icon {
+  fill: #a4a7a7;
+  transition: 0.3s;
+
+  @include size(26px);
+
+  @media screen and(max-width: 540px) {
+    @include size(18px);
+  }
+
+  &:hover {
+    fill: $main-blue;
+  }
+}
+
+.swiper-navigation {
+  position: relative;
+  width: 110px;
+
+  @media screen and(max-width: 540px) {
+    width: 90px;
+  }
+}
