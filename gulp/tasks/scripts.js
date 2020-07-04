@@ -72,6 +72,5 @@ module.exports = task('_libs', () => {
 		'node_modules/lazyload/lazyload.min.js',
 		'node_modules/swiper/js/swiper.min.js'])
 		.pipe(concat('libs.min.js'))
-		.pipe(uglify())
 		.pipe(dest('./build/js/vendor'));
 });
