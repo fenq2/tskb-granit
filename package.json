@@ -17,6 +17,7 @@
   "author": "fenq2",
   "license": "ISC",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "inputmask": "^5.0.3",
     "jquery": "^3.5.1",
     "lazyload": "^2.0.0-rc.2",

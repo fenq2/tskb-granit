@@ -62,7 +62,8 @@ module.exports = task('libs', () => {
 		'node_modules/inputmask/dist/jquery.inputmask.min.js',
 		'node_modules/lazyload/lazyload.min.js',
 		'node_modules/swiper/js/swiper.min.js',
-		'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'])
+		'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js'])
 		.pipe(concat('libs.min.js'))
 		.pipe(dest('./build/js/vendor'));
 });
@@ -72,7 +73,8 @@ module.exports = task('_libs', () => {
 		'node_modules/inputmask/dist/jquery.inputmask.min.js',
 		'node_modules/lazyload/lazyload.min.js',
 		'node_modules/swiper/js/swiper.min.js',
-		'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'])
+		'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js'])
 		.pipe(concat('libs.min.js'))
 		.pipe(dest('./build/js/vendor'));
 });

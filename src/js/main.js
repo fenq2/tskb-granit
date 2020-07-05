@@ -209,6 +209,16 @@ var popupSuccess = function() {
     });
 };
 
+// $('.price-mobile').touchmove(function () {
+//     $(this).addClass('price-mobile_hidden');
+// });
+
+document.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $('.price-mobile').addClass('price-mobile_hidden');
+}, false);
+
 sandwich();
 maskedInput();
 popupLink();
