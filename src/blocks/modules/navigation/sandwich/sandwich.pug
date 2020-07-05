@@ -11,8 +11,26 @@
             ul.sandwich-nav__list
                 li.sandwich-nav__item
                     a(href="#").sandwich-nav__link Главная
-                li.sandwich-nav__item
+                li.sandwich-nav__item.sandwich-nav__item_outer
                     a(href="#").sandwich-nav__link Услуги
+                    +icon('arrow', 'sandwich-nav__arrow')
+                    .sandwich-outer
+                        .sandwich__header
+                            a(href="#").sandwich__back-btn
+                                +icon('arrow', 'sandwich__back-icon')
+                            a(href="#").sandwich__close-btn
+                                +icon('close', 'sandwich__close-icon')
+                        ul.sandwich-outer__list
+                            li.sandwich-nav__item
+                                a(href="#").sandwich-nav__link Энергоаудит
+                            li.sandwich-nav__item
+                                a(href="#").sandwich-nav__link Разработка программ энергосбережения
+                            li.sandwich-nav__item
+                                a(href="#").sandwich-nav__link Тепловизионное обследование
+                            li.sandwich-nav__item
+                                a(href="#").sandwich-nav__link Устройства молниезащиты и заземления
+                            li.sandwich-nav__item
+                                a(href="#").sandwich-nav__link Монтажные работы
                 li.sandwich-nav__item
                     a(href="#").sandwich-nav__link Лицензия
                 li.sandwich-nav__item

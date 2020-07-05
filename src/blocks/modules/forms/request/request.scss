@@ -1,27 +1,58 @@
 .request-form {
   position: absolute;
   z-index: 1;
-  right: 0;
+  right: 20px;
   bottom: -204px;
   width: 400px;
-  background-color: rgba(255, 255, 255, .2);
-  padding: 20px;
+  background-color: transparent;
+  border-top: 20px solid rgba(255, 255, 255, 0.2);
+  padding: 0;
 
   @media screen and(max-width: 960px) {
-    position: static;
-    flex: 1;
+    position: relative;
+    bottom: 0;
   }
 
   @media screen and(max-width: 768px) {
     margin-top: 20px;
+    right: 0;
+    border-top: 15px solid rgba(255, 255, 255, 0.2);
   }
 
   @media screen and(max-width: 540px) {
     width: 100%;
   }
 
-  @media screen and(max-width: 480px) {
-    padding: 15px;
+  &:before {
+    position: absolute;
+    content: '';
+    left: -20px;
+    top: -20px;
+    width: 20px;
+    height: 98%;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    @media screen and(max-width: 768px) {
+      left: -15px;
+      top: -15px;
+      width: 15px;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    right: -20px;
+    top: -20px;
+    width: 20px;
+    height: 98%;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    @media screen and(max-width: 768px) {
+      right: -15px;
+      top: -15px;
+      width: 15px;
+    }
   }
   
   &__wrap {
@@ -78,6 +109,8 @@
   }
 
   &__btn {
+    display: block;
+    text-align: center;
     width: 100%;
     margin-top: 20px;
 

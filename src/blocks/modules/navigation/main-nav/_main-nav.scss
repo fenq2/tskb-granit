@@ -16,6 +16,7 @@
   }
   
   &__item {
+    position: relative;
     font-family: "Lato-Medium";
     padding-left: 0;
     margin-bottom: 0;
@@ -36,6 +37,10 @@
       & .main-nav__link {
         color: $main-blue;
       }
+
+      & .dropdown-menu {
+        display: block;
+      }
     }
 
     &:before {
@@ -54,5 +59,56 @@
     @media screen and(max-width: 960px) {
       font-size: 16px;
     }
+  }
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 8px 0 10px 0;
+  background-color: #e5f1f8;
+  z-index: 2;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  transition: all linear .3s;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+
+  &__item {
+    padding: 0;
+    margin: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $main-dark;
+    padding: 6px 25px 6px 15px;
+    white-space: nowrap;
+    transition: .3s;
+
+    &:hover {
+      color: $main-blue;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

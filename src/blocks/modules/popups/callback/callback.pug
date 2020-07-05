@@ -1,0 +1,18 @@
+.popup.popup-callback.mfp-hide#popup-callback
+    a(href="javascript:void(0);").popup-close
+        +icon('close', 'popup-close__icon')
+    .hide-on-success
+        .request-form.popup-callback__form
+            .request-form__wrap.popup-callback__wrap
+                h4.request-form__title.popup-callback__title Оставьте контактные данные
+                form(action="#").request-form__block.popup-callback__block
+                    input(type="text" placeholder="Ваше имя:").request-form__field
+                    input(type="tel" placeholder="Ваш телефон:").request-form__field.mask-phone
+                    input(type="submit" value="Перезвоните!").btn.request-form__btn
+                    p.request-form__policy.popup-callback__policy Отправляя форму, вы даете согласие на обработку ваших персональных данных и принимаете нашу политику конфиденциальности. Ваши данные будут в безопасности.
+    .show-on-success
+        .request-form.popup-callback__form.form-success
+            .request-form__wrap.form-success__wrap
+                .form-success__content
+                    h4.request-form__title.form-success__title Спасибо! Ваша заявка принята!
+                    p.form-success__desc Наши менеджеры перезвонят вам в течении 15 минут!

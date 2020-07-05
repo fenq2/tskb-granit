@@ -7,6 +7,20 @@ let sandwich = function () {
     $('.sandwich__close-btn').click(function () {
         $('.sandwich__content').removeClass('sandwich__content_opend');
     });
+
+    $('.sandwich-nav__item_outer').click(function () {
+        $('.sandwich-outer').addClass('sandwich-outer_opend');
+    });
+    $('.sandwich__close-btn').click(function () {
+        $('.sandwich__content').removeClass('sandwich__content_opend');
+        $('.sandwich-outer').removeClass('sandwich-outer_opend');
+        return false;
+    });
+
+    $('.sandwich__back-btn').click(function () {
+        $('.sandwich-outer').removeClass('sandwich-outer_opend');
+        return false;
+    });
 };
 
 let maskedInput = function () {
@@ -164,7 +178,6 @@ var ymap = function() {
             }
         }
     )};
-
 $(function() {
 
     //Запускаем основную функцию
@@ -172,5 +185,31 @@ $(function() {
 
 });
 
+var popupLink = function() {
+    $('.js-popup-link').magnificPopup({
+        showCloseBtn: false
+    });
+
+    $(document).on('click', '.popup-close', function () {
+        $.magnificPopup.close();
+    });
+};
+
+var popupSuccess = function() {
+    $('.show-on-success').hide();
+
+    $('.popup-callback__block').each(function () {
+        $(this).on('submit', function () {
+            var wrap = $(this)[0].closest('.hide-on-success');
+            if (wrap) {
+                $(wrap).siblings('.show-on-success').show();
+                $(wrap).hide();
+            }
+        });
+    });
+};
+
 sandwich();
 maskedInput();
+popupLink();
+popupSuccess();

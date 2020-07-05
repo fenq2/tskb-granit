@@ -1,0 +1,129 @@
+.mfp-bg {
+  background: #141522;
+  opacity: .9;
+}
+
+//.mfp-container {
+//  @media screen and(max-width: 420px) {
+//    padding: 0;
+//  }
+//}
+//
+//.mfp-content {
+//  @media screen and(max-width: 420px) {
+//    height: 100%;
+//  }
+//}
+//
+//.mfp-wrap {
+//  @media screen and(max-width: 420px) {
+//    top: 0;
+//  }
+//}
+
+.popup {
+  position: relative;
+  margin: 50px auto;
+
+  @media screen and(max-width: 580px) {
+    margin: 0 auto;
+  }
+
+  & .request-form {
+    @media screen and(max-width: 580px) {
+      border-top: none;
+      margin-top: 0;
+      height: 100%;
+    }
+
+    &__wrap {
+      @media screen and(max-width: 580px) {
+        height: 100%;
+      }
+    }
+
+    &:before {
+      @media screen and(max-width: 580px) {
+        display: none;
+      }
+    }
+
+    &:after {
+      @media screen and(max-width: 580px) {
+        display: none;
+      }
+    }
+  }
+
+  &-close {
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    z-index: 99;
+
+    @media screen and(max-width: 640px) {
+      right: 0;
+    }
+
+    @media screen and(max-width: 580px) {
+      top: 15px;
+      right: 10px;
+    }
+
+    &__icon {
+      fill: #ffffff;
+
+      @include size(25px);
+
+      @media screen and(max-width: 580px) {
+        fill: $main-dark;
+
+        @include size(20px);
+      }
+    }
+  }
+}
+
+.form-success {
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(../images/content/callback-man.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    min-height: 375px;
+
+    @media screen and(max-width: 580px) {
+      background-size: 90%;
+    }
+  }
+
+  &__content {
+    max-width: 160px;
+    padding-bottom: 25px;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 35px;
+
+    @media screen and(max-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media screen and(max-width: 480px) {
+      font-size: 24px;
+    }
+  }
+
+  &__desc {
+    padding-top: 20px;
+    line-height: 1.3;
+  }
+}
+
+@import "trials/trials";
+@import "callback/callback";
+@import "success/success";
